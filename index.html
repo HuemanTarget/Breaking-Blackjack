@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/main.js"></script>
+    <title>Blackjack</title>
+  </head>
+  <body>
+    <header>
+      <img class="title" src="assets/BB/BreakingBlackjack Title.png" />
+      <h4 class="second-title">
+        Become the King Of Meth, <br />one Blackjack at a time!
+      </h4>
+    </header>
+    <main>
+      <h3 class="dealer">Dealer</h3>
+      <div class="dealcards">
+        <img id="cardfour" src="assets/cards/back_of_card.png" height="125" />
+        <img class="cardtwo" src="assets/cards/back_of_card.png" height="125" />
+        <img class="cardeight" height="125" />
+        <img class="cardnine" height="125" />
+        <img class="cardten" height="125" />
+        <img class="cardeleven" height="125" />
+        <h3 id="dealerscore"></h3>
+      </div>
+      <h3 id="dealerscore"></h3>
+      <h3 class="player">Player</h3>
+      <div class="playcards">
+        <img class="cardone" src="assets/cards/back_of_card.png"/>
+        <img
+          class="cardthree"
+          src="assets/cards/back_of_card.png"
+          height="125"
+        />
+        <img class="cardfive" height="125" />
+        <img class="cardsix" height="125" />
+        <img class="cardseven" height="125" />
+        <h3 id="playerscore"></h3>
+      </div>
+      <h3 id="playerscore"></h3>
+      <h2 id="message">Place Your Bet!</h2>
+      <div class="bet">
+        <h2>Player Balance: $<span id="balance">100</span></h2>
+      </div>
+      <div class="chips">
+        <button id="one" type="button">
+          <img src="./assets/chips/1_chip.png" lt="Image" />
+        </button>
+        <button id="five" type="button">
+          <img src="./assets/chips/5_chip.png" lt="Image" />
+        </button>
+        <button id="twofive" type="button">
+          <img src="./assets/chips/25_chip.png" lt="Image" />
+        </button>
+        <button id="onehun" type="button">
+          <img src="./assets/chips/100_chip.png" lt="Image" />
+        </button>
+        <br/>
+        <button id="deal" class="btn btn-primary">DEAL</button>
+        <button id="hit" class="btn btn-primary">HIT</button>
+        <button id="stand" class="btn btn-outline-success">STAND</button>
+        <button id="dd" class="btn btn-outline-success">DOUBLE DOWN</button>
+        <br/>
+      </div>
+    </main>
+  </body>
+</html>
